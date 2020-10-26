@@ -3,14 +3,21 @@
  
  The Project Contain:
  1- Imposter Movement System
+ 
  2- Imposter Killing System
+ 
  3- Imposter Collider System
+ 
  4- Full Vents System
+ 
  5- Sabotage System
+ 
  6- Opening and Closing Doors System
+ 
  
  Extras:
  1- Small Smooth Camera System
+ 
  2- Among us full character Animation
  
  Tutorials and explanation for the project on my channel:
