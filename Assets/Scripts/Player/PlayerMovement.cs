@@ -64,6 +64,13 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    void FlipSprite(float inputDirection)
+    {
+        if (inputDirection > 0)
+            playerSpriteRenderer.flipX = false;
+        else if (inputDirection < 0)
+            playerSpriteRenderer.flipX = true;
+    }
 
     //Ramp Speed
     void ChangeSpeed(float inputHorDirection, float inputVerDirection)
@@ -88,13 +95,6 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    void FlipSprite(float inputDirection)
-    {
-        if (inputDirection > 0)
-            playerSpriteRenderer.flipX = false;
-        else if (inputDirection < 0)
-            playerSpriteRenderer.flipX = true;
-    }
     #endregion
 
     #region Vent Movement Control
@@ -137,6 +137,11 @@ public class PlayerMovement : MonoBehaviour
     public void StopPlayer()
     {
         CanMove = false;
+    }
+    public void KillPlayer()
+    {
+        CanMove = false;
+        playerAnimator.SetTrigger("Dead");
     }
     void DisablePlayer()
     {
